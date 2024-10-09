@@ -1,4 +1,4 @@
-﻿#include <iostream>  // Thư viện chuẩn cho nhập/xuất
+#include <iostream>  // Thư viện chuẩn cho nhập/xuất
 using namespace std;
 
 // Hàm nhập phân số
@@ -18,44 +18,41 @@ void nhapPhanSo(int &tu, int &mau) {
 
 // Hàm so sánh hai phân số
 // Trả về true nếu phân số 1 lớn hơn hoặc bằng phân số 2
-// Trả về false nếu phân số 2 lớn hơn phân số 1
-bool soSanhPhanSo(int tu1, int mau1, int tu2, int mau2) {
-    // So sánh phân số bằng cách nhân chéo (cross-multiply)
-    // Nếu tu1 * mau2 >= tu2 * mau1, phân số thứ nhất lớn hơn hoặc bằng phân số thứ hai
-    if (tu1 * mau2 >= tu2 * mau1) {
-        return true;  // Phân số thứ nhất lớn hơn hoặc bằng
-    } else {
-        return false; // Phân số thứ hai lớn hơn
-    }
-}
+// Trả về false nếu phân số 2 lớn hơn phân số 1}
 
 // Hàm xuất phân số
 // Hiển thị phân số dưới dạng tử số / mẫu số
 void xuatPhanSo(int tu, int mau) {
-    cout << tu << "/" << mau << endl;  // In phân số theo định dạng "tu/mau"
+    if (mau == 1) {
+        cout << tu << '\n';  // Nếu mẫu số là 1, chỉ cần in tử
+    } else {
+        cout << tu << "/" << mau << '\n';  // In phân số theo định dạng "tu/mau"
+    }
+}
+
+int gcd(int tu, int mau) {
+    if (mau == 0) return tu;
+    return gcd(mau, tu % mau);
+}
+
+void rutPhanSo(int tu, int mau) {
+    int ucln = gcd(tu, mau);
+    tu /= ucln;
+    mau /= ucln;
+    xuatPhanSo(tu, mau);
 }
 
 int main() {
     // Khai báo các biến cho tử số và mẫu số của hai phân số
-    int tu1, mau1, tu2, mau2;
+    int tu_so, mau_so;
 
     // Nhập phân số thứ nhất từ người dùng
-    cout << "Nhap Phan So Thu 1: \n";  // Yêu cầu nhập phân số 1
-    nhapPhanSo(tu1, mau1);             // Gọi hàm nhapPhanSo để nhập phân số 1
+    cout << "Nhap Phan So Thu 1: \n";  // Yêu cầu nhập phân số 
+    nhapPhanSo(tu_so, mau_so);             // Gọi hàm nhapPhanSo để nhập phân số 1
 
-    // Nhập phân số thứ hai từ người dùng
-    cout << "Nhap Phan So Thu 2: \n";  // Yêu cầu nhập phân số 2
-    nhapPhanSo(tu2, mau2);             // Gọi hàm nhapPhanSo để nhập phân số 2
-
-    // In phân số lớn nhất
-    cout << "Phan So Lon Nhat: ";      // In thông báo phân số lớn nhất
-
-    // So sánh hai phân số và in ra phân số lớn hơn
-    if (soSanhPhanSo(tu1, mau1, tu2, mau2)) {
-        xuatPhanSo(tu1, mau1);  // Nếu phân số 1 lớn hơn hoặc bằng, in phân số 1
-    } else {
-        xuatPhanSo(tu2, mau2);  // Nếu phân số 2 lớn hơn, in phân số 2
-    }
+    cout << "Rut gon phan so: ";
+    rutPhanSo(tu_so, mau_so);
+    
 
     return 0;  // Kết thúc chương trình
 }
