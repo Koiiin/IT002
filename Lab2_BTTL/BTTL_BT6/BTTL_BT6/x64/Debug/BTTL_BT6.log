@@ -1,0 +1,5 @@
+﻿  BTTL_BT6.cpp
+  TamGiac.cpp
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT6\TamGiac.cpp(23,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  BTTL_BT6.vcxproj -> C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT6\x64\Debug\BTTL_BT6.exe

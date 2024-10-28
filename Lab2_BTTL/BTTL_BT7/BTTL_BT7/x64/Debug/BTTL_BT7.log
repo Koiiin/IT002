@@ -1,0 +1,5 @@
+﻿  BTTL_BT7.cpp
+  Polygon.cpp
+  Generating Code...
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT7\Polygon.cpp(36,23): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  BTTL_BT7.vcxproj -> C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT7\x64\Debug\BTTL_BT7.exe
