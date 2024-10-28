@@ -1,0 +1,8 @@
+﻿  BTTL_BT2.cpp
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT2\BTTL_BT2.cpp(32,13): warning C4566: character represented by universal-character-name '\u1EC9' cannot be represented in the current code page (1252)
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT2\BTTL_BT2.cpp(32,13): warning C4566: character represented by universal-character-name '\u1EC7' cannot be represented in the current code page (1252)
+  Diem.cpp
+  TamGiac.cpp
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT2\TamGiac.cpp(55,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  BTTL_BT2.vcxproj -> C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT2\x64\Debug\BTTL_BT2.exe

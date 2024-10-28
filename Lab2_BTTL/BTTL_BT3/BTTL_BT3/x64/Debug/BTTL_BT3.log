@@ -1,0 +1,6 @@
+﻿  BTTL_BT3.cpp
+  DaGiac.cpp
+C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT3\DaGiac.cpp(68,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Diem.cpp
+  Generating Code...
+  BTTL_BT3.vcxproj -> C:\Users\HOANG KHOI\IT003-DSA\IT002\Report\Lab2_BTTL\BTTL_BT3\x64\Debug\BTTL_BT3.exe
